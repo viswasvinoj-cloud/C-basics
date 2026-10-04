@@ -1,0 +1,171 @@
+MODULE 1 PART 4 : C++
+
+Q) Example — Simple Calculator using switch:
+
+#include <iostream>
+using namespace std;
+
+int main() {
+double a, b;
+char op;
+
+```
+cout << "Enter first number, operator, second number: ";
+cin >> a >> op >> b;
+
+switch (op) {
+    case '+':
+        cout << a + b;
+        break;
+
+    case '-':
+        cout << a - b;
+        break;
+
+    case '*':
+        cout << a * b;
+        break;
+
+    case '/':
+        cout << a / b;
+        break;
+
+    default:
+        cout << "Invalid operator";
+}
+
+return 0;
+```
+
+}
+
+Sample Input:
+10 + 5
+
+Sample Output:
+Enter first number, operator, second number: 10 + 5
+15
+
+Q) Even or Odd
+
+#include <iostream>
+using namespace std;
+
+int main() {
+int n;
+
+```
+cout << "Enter a number: ";
+cin >> n;
+
+if (n % 2 == 0) {
+    cout << "Even" << endl;
+} else {
+    cout << "Odd" << endl;
+}
+
+return 0;
+```
+
+}
+
+Sample Input:
+8
+
+Sample Output:
+Enter a number: 8
+Even
+
+Q) Positive, Negative or Zero
+
+#include <iostream>
+using namespace std;
+
+int main() {
+int n;
+
+```
+cout << "Enter a number: ";
+cin >> n;
+
+if (n > 0) {
+    cout << "Positive" << endl;
+} else if (n < 0) {
+    cout << "Negative" << endl;
+} else {
+    cout << "Zero" << endl;
+}
+
+return 0;
+```
+
+}
+
+Sample Input:
+-5
+
+Sample Output:
+Enter a number: -5
+Negative
+
+Q) Pass or Fail
+
+#include <iostream>
+using namespace std;
+
+int main() {
+int marks;
+
+```
+cout << "Enter marks: ";
+cin >> marks;
+
+if (marks >= 40) {
+    cout << "Pass" << endl;
+} else {
+    cout << "Fail" << endl;
+}
+
+return 0;
+```
+
+}
+
+Sample Input:
+75
+
+Sample Output:
+Enter marks: 75
+Pass
+
+Q) Find the Largest of Three Numbers
+
+#include <iostream>
+using namespace std;
+
+int main() {
+int a, b, c;
+
+```
+cout << "Enter three numbers: ";
+cin >> a >> b >> c;
+
+if (a >= b && a >= c) {
+    cout << "Largest: " << a << endl;
+} else if (b >= a && b >= c) {
+    cout << "Largest: " << b << endl;
+} else {
+    cout << "Largest: " << c << endl;
+}
+
+return 0;
+```
+
+}
+
+Sample Input:
+10 25 15
+
+Sample Output:
+Enter three numbers: 10 25 15
+Largest: 25

@@ -1,0 +1,181 @@
+MODULE 1 PART 1-3: C++
+
+Q) Practice — Identify the Parts
+
+#include <iostream>
+using namespace std;
+
+int main() {
+cout << "Welcome to C++";
+return 0;
+}
+
+Output:
+Welcome to C++
+
+Q) Practice — Find the Error
+
+#include <iostream>
+using namespace std
+int main() {
+cout << "Hello"
+return 0;
+}
+
+Answer:
+There are two errors in the program:
+
+1. A semicolon (;) is missing after "using namespace std".
+2. A semicolon (;) is missing after cout << "Hello".
+
+Correct Code:
+
+#include <iostream>
+using namespace std;
+
+int main() {
+cout << "Hello";
+return 0;
+}
+
+Output:
+Hello
+
+Q) Output Prediction
+
+#include <iostream>
+using namespace std;
+
+int main() {
+cout << "A";
+cout << "B";
+cout << "C";
+return 0;
+}
+
+Output:
+ABC
+
+Q) Practical Program: Student Information
+
+#include <iostream>
+using namespace std;
+
+int main() {
+string name;
+int rollNo;
+float marks;
+
+```
+cout << "Enter roll number: ";
+cin >> rollNo;
+cin.ignore();
+
+cout << "Enter name: ";
+getline(cin, name);
+
+cout << "Enter marks: ";
+cin >> marks;
+
+cout << "\n--- Student Record ---\n";
+cout << "Roll No: " << rollNo << endl;
+cout << "Name: " << name << endl;
+cout << "Marks: " << marks << endl;
+
+return 0;
+```
+
+}
+
+Sample Input:
+101
+Akhil
+95.5
+
+Sample Output:
+Enter roll number: 101
+Enter name: Akhil
+Enter marks: 95.5
+
+--- Student Record ---
+Roll No: 101
+Name: Akhil
+Marks: 95.5
+
+Q) Practical Program: Two Number Input
+
+#include <iostream>
+using namespace std;
+
+int main() {
+int a, b;
+
+```
+cout << "Enter two numbers: ";
+cin >> a >> b;
+
+cout << "Sum = " << (a + b) << endl;
+
+return 0;
+```
+
+}
+
+Sample Input:
+10 20
+
+Sample Output:
+Enter two numbers: 10 20
+Sum = 30
+
+Q) Practical Program: Simple Calculator
+
+#include <iostream>
+using namespace std;
+
+int main() {
+double num1, num2;
+char op;
+
+```
+cout << "Enter first number: ";
+cin >> num1;
+
+cout << "Enter operator (+, -, *, /): ";
+cin >> op;
+
+cout << "Enter second number: ";
+cin >> num2;
+
+double result;
+
+if (op == '+') 
+    result = num1 + num2;
+else if (op == '-') 
+    result = num1 - num2;
+else if (op == '*') 
+    result = num1 * num2;
+else if (op == '/') 
+    result = num1 / num2;
+else {
+    cout << "Invalid operator";
+    return 0;
+}
+
+cout << "Result = " << result << endl;
+
+return 0;
+```
+
+}
+
+Sample Input:
+10
++
+5
+
+Sample Output:
+Enter first number: 10
+Enter operator (+, -, *, /): +
+Enter second number: 5
+Result = 15
